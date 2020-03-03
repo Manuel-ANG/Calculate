@@ -10,14 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="61d3f136-97e5-452a-ae0d-01ae927fcde0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calculatecurp/calculatecurp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/calculatecurp/calculatecurp.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/calculatedates/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/calculatedates/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calculatedates/calculatedates.iml" beforeDir="false" afterPath="$PROJECT_DIR$/calculatedates/calculatedates.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calculatedates/src/main/res/values-es-rMX/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/calculatedates/src/main/res/values-es-rMX/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calculatedates/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/calculatedates/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
