@@ -748,6 +748,82 @@
     <integer name="mtrl_tab_indicator_anim_duration_ms">250</integer>
     <integer name="show_password_duration">200</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
+    <plurals name="joda_time_android_abbrev_in_num_days">
+        <item quantity="one">tomorrow</item>
+        <item quantity="other">in <ns1:g id="count">%d</ns1:g> days</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_hours">
+        <item quantity="one">in 1 hour</item>
+        <item quantity="other">in <ns1:g id="count">%d</ns1:g> hours</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_minutes">
+        <item quantity="one">in 1 min</item>
+        <item quantity="other">in <ns1:g id="count">%d</ns1:g> mins</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_in_num_seconds">
+        <item quantity="one">in 1 sec</item>
+        <item quantity="other">in <ns1:g id="count">%d</ns1:g> secs</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_days_ago">
+        <item quantity="one">yesterday</item>
+        <item quantity="other"><ns1:g id="count">%d</ns1:g> days ago</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_hours_ago">
+        <item quantity="one">1 hour ago</item>
+        <item quantity="other"><ns1:g id="count">%d</ns1:g> hours ago</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_minutes_ago">
+        <item quantity="one">1 min ago</item>
+        <item quantity="other"><ns1:g id="count">%d</ns1:g> mins ago</item>
+    </plurals>
+    <plurals name="joda_time_android_abbrev_num_seconds_ago">
+        <item quantity="one">1 sec ago</item>
+        <item quantity="other"><ns1:g id="count">%d</ns1:g> secs ago</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_hours">
+        <item quantity="one">1 hour</item>
+        <item quantity="other"><ns1:g id="count">%d</ns1:g> hours</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_minutes">
+        <item quantity="one">1 minute</item>
+        <item quantity="other"><ns1:g id="count">%d</ns1:g> minutes</item>
+    </plurals>
+    <plurals name="joda_time_android_duration_seconds">
+        <item quantity="one">1 second</item>
+        <item quantity="other"><ns1:g id="count">%d</ns1:g> seconds</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_days">
+        <item quantity="one">tomorrow</item>
+        <item quantity="other">in <ns1:g id="count">%d</ns1:g> days</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_hours">
+        <item quantity="one">in 1 hour</item>
+        <item quantity="other">in <ns1:g id="count">%d</ns1:g> hours</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_minutes">
+        <item quantity="one">in 1 minute</item>
+        <item quantity="other">in <ns1:g id="count">%d</ns1:g> minutes</item>
+    </plurals>
+    <plurals name="joda_time_android_in_num_seconds">
+        <item quantity="one">in 1 second</item>
+        <item quantity="other">in <ns1:g id="count">%d</ns1:g> seconds</item>
+    </plurals>
+    <plurals name="joda_time_android_num_days_ago">
+        <item quantity="one">yesterday</item>
+        <item quantity="other"><ns1:g id="count">%d</ns1:g> days ago</item>
+    </plurals>
+    <plurals name="joda_time_android_num_hours_ago">
+        <item quantity="one">1 hour ago</item>
+        <item quantity="other"><ns1:g id="count">%d</ns1:g> hours ago</item>
+    </plurals>
+    <plurals name="joda_time_android_num_minutes_ago">
+        <item quantity="one">1 minute ago</item>
+        <item quantity="other"><ns1:g id="count">%d</ns1:g> minutes ago</item>
+    </plurals>
+    <plurals name="joda_time_android_num_seconds_ago">
+        <item quantity="one">1 second ago</item>
+        <item quantity="other"><ns1:g id="count">%d</ns1:g> seconds ago</item>
+    </plurals>
     <plurals description="Plural form content description for number of new notifications [CHAR_LIMIT=NONE]" name="mtrl_badge_content_description">
     <item quantity="one"><ns1:g id="count">%d</ns1:g> new notification</item>
     <item quantity="other"><ns1:g id="count">%d</ns1:g> new notifications</item>
@@ -787,12 +863,20 @@
     <string name="character_counter_pattern" translatable="false">%1$d / %2$d</string>
     <string name="chip_text">Chip text</string>
     <string name="clear_text_end_icon_content_description">Clear text</string>
+    <string name="day">día</string>
+    <string name="days">días</string>
     <string name="error_icon_content_description">Error</string>
     <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
     <string name="fab_transformation_scrim_behavior" translatable="false">com.google.android.material.transformation.FabTransformationScrimBehavior</string>
     <string name="fab_transformation_sheet_behavior" translatable="false">com.google.android.material.transformation.FabTransformationSheetBehavior</string>
     <string name="hide_bottom_view_on_scroll_behavior" translatable="false">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
     <string description="Content description for an icon that appears in the title area of a dialog" name="icon_content_description">Dialog Icon</string>
+    <string name="joda_time_android_date_time">%1$s, %2$s</string>
+    <string name="joda_time_android_preposition_for_date">on <ns1:g example="May 29" id="date">%s</ns1:g></string>
+    <string name="joda_time_android_preposition_for_time">at <ns1:g example="2:33 am" id="time">%s</ns1:g></string>
+    <string name="joda_time_android_relative_time">"<ns1:g example="4 hours ago" id="date">%1$s</ns1:g>, <ns1:g example="11:00 am" id="time">%2$s</ns1:g>"</string>
+    <string name="month">mes</string>
+    <string name="months">meses</string>
     <string description="Content description for new notification (no number count) [CHAR_LIMIT=NONE]" name="mtrl_badge_numberless_content_description">New notification</string>
     <string description="Content description for a close icon that lets the user remove content from the screen" name="mtrl_chip_close_icon_content_description">Remove %1$s</string>
     <string name="mtrl_exceed_max_badge_number_suffix" translatable="false"><ns1:g example="999" id="maximum number">%1$d</ns1:g><ns1:g example="+" id="suffix">%2$s</ns1:g></string>
@@ -834,6 +918,8 @@
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
     <string name="search_menu_title">Search</string>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="year">año</string>
+    <string name="years">años</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
