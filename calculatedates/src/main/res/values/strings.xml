@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">CalculateDates</string>
     <string name="day">día</string>
     <string name="days">días</string>
     <string name="month">mes</string>
