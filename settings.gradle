@@ -1,2 +1,3 @@
 include ':app', ':calculatedates'
-rootProject.name='Dates'
+rootProject.name = 'Dates'
+include ':app', ':calculatecurp'

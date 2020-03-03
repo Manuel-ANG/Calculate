@@ -1,12 +1,11 @@
 package com.ngam.calculatedates.Logic
 
-import com.ngam.calculatedates.App.Companion.getContext
+import com.ngam.calculatedates.InitializeApp.Companion.getContext
 import com.ngam.calculatedates.R
 import org.joda.time.*
 import org.joda.time.format.DateTimeFormat
 import org.joda.time.format.DateTimeFormatter
 import java.util.*
-import kotlin.time.ExperimentalTime
 
 class CalculateDate {
     companion object {

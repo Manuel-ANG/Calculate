@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Dates.iml" filepath="$PROJECT_DIR$/Dates.iml" group="Dates" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Dates/app" />
+      <module fileurl="file://$PROJECT_DIR$/calculatecurp/calculatecurp.iml" filepath="$PROJECT_DIR$/calculatecurp/calculatecurp.iml" group="Dates/calculatecurp" />
       <module fileurl="file://$PROJECT_DIR$/calculatedates/calculatedates.iml" filepath="$PROJECT_DIR$/calculatedates/calculatedates.iml" group="Dates/calculatedates" />
     </modules>
   </component>
