@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CalculateDates</string>
+    <string name="day">día</string>
+    <string name="days">días</string>
+    <string name="month">mes</string>
+    <string name="months">meses</string>
+    <string name="year">año</string>
+    <string name="years">años</string>
+</resources>

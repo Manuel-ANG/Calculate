@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: me.doubledutch:lazyjson:2.3.2@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.doubledutch/lazyjson/2.3.2/fa26bb4f58d6ae47e78ed38efb7651a94b4fc27a/lazyjson-2.3.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.doubledutch/lazyjson/2.3.2/1fc0293734c097ba20851fb7caca6836b45ea7aa/lazyjson-2.3.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/me.doubledutch/lazyjson/2.3.2/adcbfdab4dec6d9d622cddade096fe0e86c2e8f9/lazyjson-2.3.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
