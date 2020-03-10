@@ -2,6 +2,9 @@ package com.ngam.dates
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
+import com.ngam.calculatedates.Logic.ConvertDate
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
