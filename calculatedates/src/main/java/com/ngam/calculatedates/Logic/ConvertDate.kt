@@ -7,6 +7,15 @@ import java.util.*
 
 class ConvertDate {
     companion object {
+
+        fun toDate(value: Long): Date? {
+            return DateTime(value).toDate()
+        }
+
+        fun toLong(value: Date): Long? {
+            return DateTime(value.time).toDate().time
+        }
+
         fun toDate(value: String): Date? {
             var convertDate: String? = null
             try {

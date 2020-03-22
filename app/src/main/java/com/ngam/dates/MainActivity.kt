@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         dale.setOnClickListener {
-            println("VALUE ${ConvertDate.toDate("2018-11-09",)}")
+            println("VALUE ${ConvertDate.toDate("2018-11-09",null)}")
         }
     }
 }
