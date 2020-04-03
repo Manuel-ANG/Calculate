@@ -41,4 +41,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     implementation project(path: ':calculatecurp')
     implementation project(path: ':calculatedates')
+    implementation project(path: ':circleimageview')
 }

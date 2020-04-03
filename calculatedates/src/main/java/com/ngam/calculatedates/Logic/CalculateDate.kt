@@ -86,7 +86,6 @@ class CalculateDate {
             val meses: Int
             val anios: Int
             val builder = StringBuilder()
-            var mDays: Int
             val tiempo1: DateTime?
             val tiempo2: DateTime?
             val current: DateTime? = if (now != null) {
@@ -201,7 +200,6 @@ class CalculateDate {
             val meses: Int
             val anios: Int
             val builder = StringBuilder()
-            var mDays: Int
             val tiempo1: DateTime?
             val tiempo2: DateTime?
             val current: DateTime? = if (now != null) {
@@ -332,7 +330,6 @@ class CalculateDate {
             val meses: Int
             val anios: Int
             val builder = StringBuilder()
-            var mDays: Int
             val tiempo1: DateTime?
             val tiempo2: DateTime?
             val current: DateTime? = if (now != null) {

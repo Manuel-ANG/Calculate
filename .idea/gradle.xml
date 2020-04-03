@@ -14,6 +14,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/calculatecurp" />
             <option value="$PROJECT_DIR$/calculatedates" />
+            <option value="$PROJECT_DIR$/circleimageview" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

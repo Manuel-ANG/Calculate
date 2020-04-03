@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="circleView">
+        <attr name="stroke_with" format="dimension" />
+        <attr name="stroke_color" format="color" />
+        <attr name="image_path" format="reference" />
+        <attr name="center_crop" format="boolean" />
+    </declare-styleable>
+
+</resources>
