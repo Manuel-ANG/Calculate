@@ -85,6 +85,22 @@ class ConvertDate {
             }
         }
 
+        fun convertDate(value: Date?, format: String): String? {
+            var time: Date? = null
+            return try {
+                value?.let {
+                    time = it
+                } ?: run {
+                    time = DateTime().toDate()
+                }
+                val formats = applyCustomFormat(format)
+                formats?.print(DateTime(time))
+            } catch (e: Throwable) {
+                e.printStackTrace()
+                null
+            }
+        }
+
         private fun applyformat(): DateTimeFormatter? {
             return DateTimeFormat.forPattern("dd/MM/yyyy").withLocale(Locale.getDefault())
         }

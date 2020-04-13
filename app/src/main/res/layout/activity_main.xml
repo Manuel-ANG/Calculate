@@ -9,11 +9,4 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <com.ngam.circleimageview.CircleImage
-        android:id="@+id/contenido"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_centerInParent="true"
-        app:center_crop="true"
-        app:image_path="@drawable/abc" />
 </LinearLayout>
