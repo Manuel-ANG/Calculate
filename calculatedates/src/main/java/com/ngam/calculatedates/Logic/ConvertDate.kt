@@ -108,5 +108,16 @@ class ConvertDate {
         private fun applyCustomFormat(format: String): DateTimeFormatter? {
             return DateTimeFormat.forPattern(format).withLocale(Locale.getDefault())
         }
+
+        fun addDaysToDate(date: String?, format: String, days: Int): String? {
+            var dates: DateTime? = null
+            date?.let {
+                dates = DateTime("${applyCustomFormat(format)?.parseDateTime(date)}")
+            } ?: run {
+                dates = DateTime()
+            }
+            val added = dates!!.plusDays(days)
+            return convertDate(added.toDate(), format)
+        }
     }
 }

@@ -16,7 +16,7 @@ class CalculateDate {
         fun calculateDays(start: String, now: Date?): Int? {
             try {
                 val nacimiento =
-                        DateTime("${applyformat()?.parseDateTime(start.replace("-", "/"))}")
+                    DateTime("${applyformat()?.parseDateTime(start.replace("-", "/"))}")
                 var current: DateTime? = null
                 current = if (now != null) {
                     DateTime(now)
@@ -39,7 +39,7 @@ class CalculateDate {
         fun calculateMonths(start: String, now: Date?): Int? {
             try {
                 val nacimiento =
-                        DateTime("${applyformat()?.parseDateTime(start.replace("-", "/"))}")
+                    DateTime("${applyformat()?.parseDateTime(start.replace("-", "/"))}")
                 var current: DateTime? = null
                 current = if (now != null) {
                     DateTime(now)
@@ -61,7 +61,7 @@ class CalculateDate {
         fun calculateYears(start: String, now: Date?): Int? {
             try {
                 val nacimiento =
-                        DateTime("${applyformat()?.parseDateTime(start.replace("-", "/"))}")
+                    DateTime("${applyformat()?.parseDateTime(start.replace("-", "/"))}")
                 var current: DateTime? = null
                 current = if (now != null) {
                     DateTime(now)
@@ -95,15 +95,35 @@ class CalculateDate {
             }
 
             try {
-                val nacimiento = DateTime("${applyformat()?.parseDateTime(start.replace("-", "/"))}");
+                val nacimiento =
+                    DateTime("${applyformat()?.parseDateTime(start.replace("-", "/"))}");
 
                 val mAno = Large.calculateYears(nacimiento, current)
 
-                if (nacimiento.dayOfMonth > parseTime((nacimiento.year + mAno!!), nacimiento.monthOfYear).dayOfMonth) {
-                    val diference = nacimiento.dayOfMonth - parseTime((nacimiento.year + mAno), nacimiento.monthOfYear).dayOfMonth
-                    tiempo1 = DateTime((nacimiento.year + mAno), nacimiento.monthOfYear, (nacimiento.dayOfMonth - diference), 0, 0)
+                if (nacimiento.dayOfMonth > parseTime(
+                        (nacimiento.year + mAno!!),
+                        nacimiento.monthOfYear
+                    ).dayOfMonth
+                ) {
+                    val diference = nacimiento.dayOfMonth - parseTime(
+                        (nacimiento.year + mAno),
+                        nacimiento.monthOfYear
+                    ).dayOfMonth
+                    tiempo1 = DateTime(
+                        (nacimiento.year + mAno),
+                        nacimiento.monthOfYear,
+                        (nacimiento.dayOfMonth - diference),
+                        0,
+                        0
+                    )
                 } else {
-                    tiempo1 = DateTime((nacimiento.year + mAno), nacimiento.monthOfYear, nacimiento.dayOfMonth, 0, 0)
+                    tiempo1 = DateTime(
+                        (nacimiento.year + mAno),
+                        nacimiento.monthOfYear,
+                        nacimiento.dayOfMonth,
+                        0,
+                        0
+                    )
                 }
 
                 val mMes = Large.calculateMonths(tiempo1, current)
@@ -132,18 +152,18 @@ class CalculateDate {
 
                 if (anios > 0) {
                     builder.append(anios).append(
-                            if (anios == 1) " ${getContext()?.getString(R.string.year)}" else " ${getContext()?.getString(
-                                    R.string.years
-                            )}"
+                        if (anios == 1) " ${getContext()?.getString(R.string.year)}" else " ${getContext()?.getString(
+                            R.string.years
+                        )}"
                     )
                     if (meses > 0) {
                         if (builder.length > 0) {
                             builder.append(" ")
                         }
                         builder.append(meses).append(
-                                if (meses > 1) " ${getContext()?.getString(R.string.months)}" else " ${getContext()?.getString(
-                                        R.string.month
-                                )}"
+                            if (meses > 1) " ${getContext()?.getString(R.string.months)}" else " ${getContext()?.getString(
+                                R.string.month
+                            )}"
                         )
                     }
                     if (dias > 0) {
@@ -151,9 +171,9 @@ class CalculateDate {
                             builder.append(" ")
                         }
                         builder.append(dias).append(
-                                if (dias == 1) " ${getContext()?.getString(R.string.day)}" else " ${getContext()?.getString(
-                                        R.string.days
-                                )}"
+                            if (dias == 1) " ${getContext()?.getString(R.string.day)}" else " ${getContext()?.getString(
+                                R.string.days
+                            )}"
                         )
                     }
                 } else {
@@ -162,18 +182,18 @@ class CalculateDate {
                             builder.append(" ")
                         }
                         builder.append(meses).append(
-                                if (meses > 1) " ${getContext()?.getString(R.string.months)}" else " ${getContext()?.getString(
-                                        R.string.month
-                                )}"
+                            if (meses > 1) " ${getContext()?.getString(R.string.months)}" else " ${getContext()?.getString(
+                                R.string.month
+                            )}"
                         )
                         if (dias > 0) {
                             if (builder.length > 0) {
                                 builder.append(" ")
                             }
                             builder.append(dias).append(
-                                    if (dias == 1) " ${getContext()?.getString(R.string.day)}" else " ${getContext()?.getString(
-                                            R.string.days
-                                    )}"
+                                if (dias == 1) " ${getContext()?.getString(R.string.day)}" else " ${getContext()?.getString(
+                                    R.string.days
+                                )}"
                             )
                         }
                     } else {
@@ -181,9 +201,9 @@ class CalculateDate {
                             builder.append(" ")
                         }
                         builder.append(dias).append(
-                                if (dias == 1) " ${getContext()?.getString(R.string.day)}" else " ${getContext()?.getString(
-                                        R.string.days
-                                )}"
+                            if (dias == 1) " ${getContext()?.getString(R.string.day)}" else " ${getContext()?.getString(
+                                R.string.days
+                            )}"
                         )
                     }
                 }
@@ -213,28 +233,28 @@ class CalculateDate {
                 val mAno = Large.calculateYears(nacimiento, current)
 
                 if (nacimiento.dayOfMonth > parseTime(
-                                (nacimiento.year + mAno!!),
-                                nacimiento.monthOfYear
-                        ).dayOfMonth
+                        (nacimiento.year + mAno!!),
+                        nacimiento.monthOfYear
+                    ).dayOfMonth
                 ) {
                     val diference = nacimiento.dayOfMonth - parseTime(
-                            (nacimiento.year + mAno),
-                            nacimiento.monthOfYear
+                        (nacimiento.year + mAno),
+                        nacimiento.monthOfYear
                     ).dayOfMonth
                     tiempo1 = DateTime(
-                            (nacimiento.year + mAno),
-                            nacimiento.monthOfYear,
-                            (nacimiento.dayOfMonth - diference),
-                            0,
-                            0
+                        (nacimiento.year + mAno),
+                        nacimiento.monthOfYear,
+                        (nacimiento.dayOfMonth - diference),
+                        0,
+                        0
                     )
                 } else {
                     tiempo1 = DateTime(
-                            (nacimiento.year + mAno),
-                            nacimiento.monthOfYear,
-                            nacimiento.dayOfMonth,
-                            0,
-                            0
+                        (nacimiento.year + mAno),
+                        nacimiento.monthOfYear,
+                        nacimiento.dayOfMonth,
+                        0,
+                        0
                     )
                 }
 
@@ -262,18 +282,18 @@ class CalculateDate {
                 }
                 if (anios > 0) {
                     builder.append(anios).append(
-                            if (anios == 1) " ${getContext()?.getString(R.string.year)}" else " ${getContext()?.getString(
-                                    R.string.years
-                            )}"
+                        if (anios == 1) " ${getContext()?.getString(R.string.year)}" else " ${getContext()?.getString(
+                            R.string.years
+                        )}"
                     )
                     if (meses > 0) {
                         if (builder.length > 0) {
                             builder.append(" ")
                         }
                         builder.append(meses).append(
-                                if (meses > 1) " ${getContext()?.getString(R.string.months)}" else " ${getContext()?.getString(
-                                        R.string.month
-                                )}"
+                            if (meses > 1) " ${getContext()?.getString(R.string.months)}" else " ${getContext()?.getString(
+                                R.string.month
+                            )}"
                         )
                     }
                     if (dias > 0) {
@@ -281,9 +301,9 @@ class CalculateDate {
                             builder.append(" ")
                         }
                         builder.append(dias).append(
-                                if (dias == 1) " ${getContext()?.getString(R.string.day)}" else " ${getContext()?.getString(
-                                        R.string.days
-                                )}"
+                            if (dias == 1) " ${getContext()?.getString(R.string.day)}" else " ${getContext()?.getString(
+                                R.string.days
+                            )}"
                         )
                     }
                 } else {
@@ -292,18 +312,18 @@ class CalculateDate {
                             builder.append(" ")
                         }
                         builder.append(meses).append(
-                                if (meses > 1) " ${getContext()?.getString(R.string.months)}" else " ${getContext()?.getString(
-                                        R.string.month
-                                )}"
+                            if (meses > 1) " ${getContext()?.getString(R.string.months)}" else " ${getContext()?.getString(
+                                R.string.month
+                            )}"
                         )
                         if (dias > 0) {
                             if (builder.length > 0) {
                                 builder.append(" ")
                             }
                             builder.append(dias).append(
-                                    if (dias == 1) " ${getContext()?.getString(R.string.day)}" else " ${getContext()?.getString(
-                                            R.string.days
-                                    )}"
+                                if (dias == 1) " ${getContext()?.getString(R.string.day)}" else " ${getContext()?.getString(
+                                    R.string.days
+                                )}"
                             )
                         }
                     } else {
@@ -311,9 +331,9 @@ class CalculateDate {
                             builder.append(" ")
                         }
                         builder.append(dias).append(
-                                if (dias == 1) " ${getContext()?.getString(R.string.day)}" else " ${getContext()?.getString(
-                                        R.string.days
-                                )}"
+                            if (dias == 1) " ${getContext()?.getString(R.string.day)}" else " ${getContext()?.getString(
+                                R.string.days
+                            )}"
                         )
                     }
                 }
@@ -343,28 +363,28 @@ class CalculateDate {
                 val mAno = Large.calculateYears(nacimiento, current)
 
                 if (nacimiento.dayOfMonth > parseTime(
-                                (nacimiento.year + mAno!!),
-                                nacimiento.monthOfYear
-                        ).dayOfMonth
+                        (nacimiento.year + mAno!!),
+                        nacimiento.monthOfYear
+                    ).dayOfMonth
                 ) {
                     val diference = nacimiento.dayOfMonth - parseTime(
-                            (nacimiento.year + mAno),
-                            nacimiento.monthOfYear
+                        (nacimiento.year + mAno),
+                        nacimiento.monthOfYear
                     ).dayOfMonth
                     tiempo1 = DateTime(
-                            (nacimiento.year + mAno),
-                            nacimiento.monthOfYear,
-                            (nacimiento.dayOfMonth - diference),
-                            0,
-                            0
+                        (nacimiento.year + mAno),
+                        nacimiento.monthOfYear,
+                        (nacimiento.dayOfMonth - diference),
+                        0,
+                        0
                     )
                 } else {
                     tiempo1 = DateTime(
-                            (nacimiento.year + mAno),
-                            nacimiento.monthOfYear,
-                            nacimiento.dayOfMonth,
-                            0,
-                            0
+                        (nacimiento.year + mAno),
+                        nacimiento.monthOfYear,
+                        nacimiento.dayOfMonth,
+                        0,
+                        0
                     )
                 }
 
@@ -392,18 +412,18 @@ class CalculateDate {
                 }
                 if (anios > 0) {
                     builder.append(anios).append(
-                            if (anios == 1) " ${getContext()?.getString(R.string.year)}" else " ${getContext()?.getString(
-                                    R.string.years
-                            )}"
+                        if (anios == 1) " ${getContext()?.getString(R.string.year)}" else " ${getContext()?.getString(
+                            R.string.years
+                        )}"
                     )
                     if (meses > 0) {
                         if (builder.length > 0) {
                             builder.append(" ")
                         }
                         builder.append(meses).append(
-                                if (meses > 1) " ${getContext()?.getString(R.string.months)}" else " ${getContext()?.getString(
-                                        R.string.month
-                                )}"
+                            if (meses > 1) " ${getContext()?.getString(R.string.months)}" else " ${getContext()?.getString(
+                                R.string.month
+                            )}"
                         )
                     }
                     if (dias > 0) {
@@ -411,9 +431,9 @@ class CalculateDate {
                             builder.append(" ")
                         }
                         builder.append(dias).append(
-                                if (dias == 1) " ${getContext()?.getString(R.string.day)}" else " ${getContext()?.getString(
-                                        R.string.days
-                                )}"
+                            if (dias == 1) " ${getContext()?.getString(R.string.day)}" else " ${getContext()?.getString(
+                                R.string.days
+                            )}"
                         )
                     }
                 } else {
@@ -422,18 +442,18 @@ class CalculateDate {
                             builder.append(" ")
                         }
                         builder.append(meses).append(
-                                if (meses > 1) " ${getContext()?.getString(R.string.months)}" else " ${getContext()?.getString(
-                                        R.string.month
-                                )}"
+                            if (meses > 1) " ${getContext()?.getString(R.string.months)}" else " ${getContext()?.getString(
+                                R.string.month
+                            )}"
                         )
                         if (dias > 0) {
                             if (builder.length > 0) {
                                 builder.append(" ")
                             }
                             builder.append(dias).append(
-                                    if (dias == 1) " ${getContext()?.getString(R.string.day)}" else " ${getContext()?.getString(
-                                            R.string.days
-                                    )}"
+                                if (dias == 1) " ${getContext()?.getString(R.string.day)}" else " ${getContext()?.getString(
+                                    R.string.days
+                                )}"
                             )
                         }
                     } else {
@@ -441,9 +461,9 @@ class CalculateDate {
                             builder.append(" ")
                         }
                         builder.append(dias).append(
-                                if (dias == 1) " ${getContext()?.getString(R.string.day)}" else " ${getContext()?.getString(
-                                        R.string.days
-                                )}"
+                            if (dias == 1) " ${getContext()?.getString(R.string.day)}" else " ${getContext()?.getString(
+                                R.string.days
+                            )}"
                         )
                     }
                 }
@@ -457,8 +477,8 @@ class CalculateDate {
         private fun parseTime(year: Int, month: Int): DateTime {
             /*val day = Calendar.getInstance()
             day.set(Calendar.MONTH, (month - 1))*/
-            val localDate = LocalDate(year,month,1)
-            val time = DateTime(year, month,localDate.dayOfMonth().maximumValue, 0, 0)
+            val localDate = LocalDate(year, month, 1)
+            val time = DateTime(year, month, localDate.dayOfMonth().maximumValue, 0, 0)
             return time
         }
     }
