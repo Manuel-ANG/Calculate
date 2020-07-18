@@ -15,7 +15,6 @@
     <list default="true" id="61d3f136-97e5-452a-ae0d-01ae927fcde0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_0_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_appcompat_appcompat_1_1_0_aar.xml" afterDir="false" />
@@ -66,16 +65,15 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_1_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__net_danlew_android_joda_2_10_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__net_danlew_android_joda_2_10_3_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dates.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Dates.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ngam/dates/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ngam/dates/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/calculatecurp/calculatecurp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/calculatecurp/calculatecurp.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/calculatedates/calculatedates.iml" beforeDir="false" afterPath="$PROJECT_DIR$/calculatedates/calculatedates.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calculatedates/src/main/java/com/ngam/calculatedates/Logic/CalculateDate.kt" beforeDir="false" afterPath="$PROJECT_DIR$/calculatedates/src/main/java/com/ngam/calculatedates/Logic/CalculateDate.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calculatedates/src/main/java/com/ngam/calculatedates/Logic/ConvertDate.kt" beforeDir="false" afterPath="$PROJECT_DIR$/calculatedates/src/main/java/com/ngam/calculatedates/Logic/ConvertDate.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/circleimageview/circleimageview.iml" beforeDir="false" afterPath="$PROJECT_DIR$/circleimageview/circleimageview.iml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,8 +98,8 @@
         <option value="layoutResourceFile_vertical" />
         <option value="valueResourceFile" />
         <option value="resourceFile" />
-        <option value="Kotlin File" />
         <option value="Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -112,12 +110,18 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DEBUGGABLE_DEVICE" value="samsung-sm_t390-5200a0dd5a21c497" />
     <property name="DEBUGGABLE_PROCESS" value="com.ngam.dates" />
     <property name="DEBUGGER_ID" value="Auto" />
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="5200a0dd5a21c497" />
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-02-11T18:30:06.963Z" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
@@ -138,18 +142,6 @@
       <recent name="C:\AndroidProjects\Dates\circleimageview\src\main\res\drawable" />
       <recent name="C:\AndroidProjects\Dates\app\src\main\res\drawable" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -237,6 +229,48 @@
       </map>
     </option>
   </component>
+  <component name="WindowStateProjectService">
+    <state x="538" y="129" key="AndroidProcessChooserDialog" timestamp="1595111917748">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="538" y="129" key="AndroidProcessChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1595111917748" />
+    <state width="563" height="466" key="DebuggerActiveHint" timestamp="1595111676237">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="563" height="466" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1595111676237" />
+    <state width="1323" height="236" key="GridCell.Tab.0.bottom" timestamp="1595112029268">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="236" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1595112029268" />
+    <state width="1323" height="236" key="GridCell.Tab.0.center" timestamp="1595112029268">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="236" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1595112029268" />
+    <state width="1323" height="236" key="GridCell.Tab.0.left" timestamp="1595112029267">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="236" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1595112029267" />
+    <state width="1323" height="236" key="GridCell.Tab.0.right" timestamp="1595112029268">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="236" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1595112029268" />
+    <state width="1323" height="222" key="GridCell.Tab.1.bottom" timestamp="1595111977561">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="222" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1595111977561" />
+    <state width="1323" height="222" key="GridCell.Tab.1.center" timestamp="1595111977561">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="222" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1595111977561" />
+    <state width="1323" height="222" key="GridCell.Tab.1.left" timestamp="1595111977561">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="222" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1595111977561" />
+    <state width="1323" height="222" key="GridCell.Tab.1.right" timestamp="1595111977561">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="222" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1595111977561" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -289,6 +323,31 @@
           <url>file://$PROJECT_DIR$/circleimageview/src/main/java/com/ngam/circleimageview/CircleImage.kt</url>
           <line>43</line>
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/calculatedates/src/main/java/com/ngam/calculatedates/Logic/CompareDates.kt</url>
+          <line>13</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/calculatedates/src/main/java/com/ngam/calculatedates/Logic/CompareDates.kt</url>
+          <line>15</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/calculatedates/src/main/java/com/ngam/calculatedates/Logic/CompareDates.kt</url>
+          <line>18</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/calculatedates/src/main/java/com/ngam/calculatedates/Logic/CompareDates.kt</url>
+          <line>21</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/calculatedates/src/main/java/com/ngam/calculatedates/Logic/CompareDates.kt</url>
+          <line>24</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

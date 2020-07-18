@@ -8,5 +8,9 @@
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".MainActivity">
-
+<Button
+    android:id="@+id/boton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="pulsa"/>
 </LinearLayout>

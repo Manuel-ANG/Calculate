@@ -1462,6 +1462,7 @@ id auto
 id barrier
 id beginning
 id blocking
+id boton
 id bottom
 id buttonPanel
 id cancel_action
