@@ -7,7 +7,7 @@
     android:layout_gravity="center"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context="com.ngam.dates.MainActivity">
 <Button
     android:id="@+id/boton"
     android:layout_width="wrap_content"

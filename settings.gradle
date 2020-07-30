@@ -1,3 +1,4 @@
+include ':zippy'
 rootProject.name = 'Dates'
 include ':app', ':calculatedates'
 include ':app', ':calculatecurp'

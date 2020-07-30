@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/calculatecurp/calculatecurp.iml" filepath="$PROJECT_DIR$/calculatecurp/calculatecurp.iml" group="Dates/calculatecurp" />
       <module fileurl="file://$PROJECT_DIR$/calculatedates/calculatedates.iml" filepath="$PROJECT_DIR$/calculatedates/calculatedates.iml" group="Dates/calculatedates" />
       <module fileurl="file://$PROJECT_DIR$/circleimageview/circleimageview.iml" filepath="$PROJECT_DIR$/circleimageview/circleimageview.iml" group="Dates/circleimageview" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zippy/zippy.iml" filepath="$PROJECT_DIR$/.idea/modules/zippy/zippy.iml" group="Dates/zippy" />
     </modules>
   </component>
 </project>

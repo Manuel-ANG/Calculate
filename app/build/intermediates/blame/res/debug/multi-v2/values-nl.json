@@ -4,6 +4,23 @@
             "outputFile": "C:\\AndroidProjects\\Dates\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-nl\\values-nl.xml",
             "map": [
                 {
+                    "source": "C:\\Users\\ngam\\.gradle\\caches\\transforms-2\\files-2.1\\540387d2c2d39e5f88b21f72d7396f41\\core-1.3.1\\res\\values-nl\\values-nl.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "110",
+                        "startColumns": "4",
+                        "startOffsets": "8307",
+                        "endColumns": "100",
+                        "endOffsets": "8403"
+                    }
+                },
+                {
                     "source": "C:\\Users\\ngam\\.gradle\\caches\\transforms-2\\files-2.1\\39e428482ef1ce8c5ae98a55f9916341\\jetified-android.joda-2.10.3\\res\\values-nl\\values-nl.xml",
                     "from": {
                         "startLines": "2,6,10,14,18,22,26,30,34,38,42,46,50,54,58,62,66,70,74,78,79,80,81",
@@ -37,23 +54,6 @@
                         "startOffsets": "5025,5143,5248,5355,5441,5549,5669,5747,5824,5916,6009,6104,6198,6299,6393,6489,6584,6676,6768,6849,6960,7063,7162,7277,7391,7494,7649,8225",
                         "endColumns": "117,104,106,85,107,119,77,76,91,92,94,93,100,93,95,94,91,91,80,110,102,98,114,113,102,154,102,81",
                         "endOffsets": "5138,5243,5350,5436,5544,5664,5742,5819,5911,6004,6099,6193,6294,6388,6484,6579,6671,6763,6844,6955,7058,7157,7272,7386,7489,7644,7747,8302"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\ngam\\.gradle\\caches\\transforms-2\\files-2.1\\e402fd898233a3fe4adf141d1b275e2d\\core-1.2.0\\res\\values-nl\\values-nl.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "110",
-                        "startColumns": "4",
-                        "startOffsets": "8307",
-                        "endColumns": "100",
-                        "endOffsets": "8403"
                     }
                 }
             ]
