@@ -7,8 +7,9 @@ import java.util.*
 class CreateFile {
     companion object {
         var rootPath: File? = null
-        var nameFile = "${UUID.randomUUID()}"
         var extension = "json"
+
+        fun nameFile() = "${UUID.randomUUID()}"
 
         fun create(rootPath: File, data: String, nameFile: String, extension: String): File {
             val file = File(rootPath, "$nameFile.$extension")
@@ -24,7 +25,7 @@ class CreateFile {
             if (rootPath == null) {
                 throw IllegalArgumentException("NOT FOUND rootPath")
             } else {
-                val file = File(rootPath, "${nameFile ?: this.nameFile}.${extension ?: this.extension}")
+                val file = File(rootPath, "${nameFile ?: nameFile()}.${extension ?: this.extension}")
                 file.createNewFile()
                 val writer = FileWriter(file, false)
                 writer.write(data)
@@ -38,7 +39,7 @@ class CreateFile {
             if (rootPath == null) {
                 throw IllegalArgumentException("NOT FOUND rootPath")
             } else {
-                val file = File(rootPath, "$nameFile.${extension ?: this.extension}")
+                val file = File(rootPath, "${nameFile()}.${extension ?: this.extension}")
                 file.createNewFile()
                 val writer = FileWriter(file, false)
                 writer.write(data)
@@ -52,7 +53,7 @@ class CreateFile {
             if (rootPath == null) {
                 throw IllegalArgumentException("NOT FOUND rootPath")
             } else {
-                val file = File(rootPath, "$nameFile.$extension")
+                val file = File(rootPath, "${nameFile()}.$extension")
                 file.createNewFile()
                 val writer = FileWriter(file, false)
                 writer.write(data)

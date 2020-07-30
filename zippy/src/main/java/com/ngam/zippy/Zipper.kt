@@ -9,51 +9,64 @@ import net.lingala.zip4j.model.enums.EncryptionMethod
 import java.io.File
 
 class Zipper {
-    companion object {
 
-        fun zip(file: File, destination: File, pwd: String?) {
-            val pass = pwd ?: ""
-            val parameters = ZipParameters().apply {
+    companion object {
+        private fun parameters(): ZipParameters {
+            return ZipParameters().apply {
                 compressionMethod = CompressionMethod.DEFLATE
                 compressionLevel = CompressionLevel.ULTRA
             }
+        }
 
-            if (pwd != null) {
+        fun encryp(params: ZipParameters): ZipParameters {
+            return params.apply {
+                isEncryptFiles = true
+                encryptionMethod = EncryptionMethod.AES
+                aesKeyStrength = AesKeyStrength.KEY_STRENGTH_256
+            }
+        }
+
+        fun zip(file: File, destination: File, pwd: String?) {
+            val pass = if (pwd.isNullOrEmpty()) {
+                ""
+            } else {
+                pwd
+            }
+            val parameters = parameters()
+            if (!pwd.isNullOrEmpty()) {
                 parameters.apply {
-                    isEncryptFiles = true
-                    encryptionMethod = EncryptionMethod.AES
-                    aesKeyStrength = AesKeyStrength.KEY_STRENGTH_256
+                    encryp(this)
                 }
             }
-            println("PASSWORD $pass |${pass.isEmpty()}|")
             val zipfile = ZipFile(destination, pass.toCharArray())
             zipfile.addFile(file, parameters)
         }
 
         fun zip(file: List<File>, destination: File, pwd: String?) {
-            val pass = pwd ?: ""
-            val parameters = ZipParameters().apply {
-                compressionMethod = CompressionMethod.DEFLATE
-                compressionLevel = CompressionLevel.ULTRA
+            val pass = if (pwd.isNullOrEmpty()) {
+                ""
+            } else {
+                pwd
             }
 
-            if (pwd != null) {
+            val parameters = parameters()
+            if (!pwd.isNullOrEmpty()) {
                 parameters.apply {
-                    isEncryptFiles = true
-                    encryptionMethod = EncryptionMethod.AES
-                    aesKeyStrength = AesKeyStrength.KEY_STRENGTH_256
+                    encryp(this)
                 }
             }
-            println("PASSWORD $pass |${pass.isEmpty()}|")
-            val destino = "${destination.absolutePath}.zip"
-            val zipfile = ZipFile(destino, pass.toCharArray())
+            val zipfile = ZipFile(destination, pass.toCharArray())
             zipfile.addFiles(file, parameters)
         }
 
         fun unzip(fileLocation: File, fileDestination: File, pwd: String?) {
-            val zip = ZipFile("${fileLocation.absolutePath}.zip")
+            val zip = ZipFile(fileLocation.absolutePath)
             if (zip.isEncrypted) {
-                val pass = pwd ?: ""
+                val pass = if (pwd.isNullOrEmpty()) {
+                    ""
+                } else {
+                    pwd
+                }
                 zip.setPassword(pass.toCharArray())
             }
             zip.extractAll(fileDestination.absolutePath)

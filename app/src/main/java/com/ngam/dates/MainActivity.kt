@@ -48,12 +48,13 @@ class MainActivity : AppCompatActivity() {
                         CreateFile.create("SDDJKSKJDHSDD"),
                         CreateFile.create("SDJFSDFDH")
                 )
-                val fileZip = File(directory, "NNUEVO")
+                val fileZip = File(directory, "NNUEVO.zip")
                 //ZipUtils().zipFile(file.absolutePath, fileZip.absolutePath, "")
                 Zipper.zip(lista, fileZip, "MANUEL")
                 lista.forEach {
                     it.delete()
                 }
+                Zipper.unzip(fileZip,directory,"MANUEL")
                 return fileZip
             }
         } catch (e: Throwable) {
