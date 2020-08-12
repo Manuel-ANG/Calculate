@@ -43,18 +43,18 @@ class MainActivity : AppCompatActivity() {
                     rootPath = directory
                 }
                 val lista: ArrayList<File> = arrayListOf(
-                        CreateFile.create("holaaaaa"),
-                        CreateFile.create("YAAAAA"),
-                        CreateFile.create("SDDJKSKJDHSDD"),
-                        CreateFile.create("SDJFSDFDH")
+                    CreateFile.create("holaaaaa"),
+                    CreateFile.create("YAAAAA"),
+                    CreateFile.create("SDDJKSKJDHSDD"),
+                    CreateFile.create("SDJFSDFDH")
                 )
-                val fileZip = File(directory, "NNUEVO.zip")
+                val fileZip = File(directory, "SINGLEFILE.zip")
                 //ZipUtils().zipFile(file.absolutePath, fileZip.absolutePath, "")
-                Zipper.zip(lista, fileZip, "MANUEL")
+                Zipper.zip(CreateFile.create("holaaaaa"), fileZip, "12345")
                 lista.forEach {
                     it.delete()
                 }
-                Zipper.unzip(fileZip,directory,"MANUEL")
+                //Zipper.unzip(fileZip,directory,"MANUEL")
                 return fileZip
             }
         } catch (e: Throwable) {

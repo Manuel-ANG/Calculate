@@ -14,15 +14,15 @@ class Zipper {
         private fun parameters(): ZipParameters {
             return ZipParameters().apply {
                 compressionMethod = CompressionMethod.DEFLATE
-                compressionLevel = CompressionLevel.ULTRA
+                compressionLevel = CompressionLevel.NORMAL
             }
         }
 
         fun encryp(params: ZipParameters): ZipParameters {
             return params.apply {
                 isEncryptFiles = true
-                encryptionMethod = EncryptionMethod.AES
-                aesKeyStrength = AesKeyStrength.KEY_STRENGTH_256
+                encryptionMethod = EncryptionMethod.ZIP_STANDARD
+                aesKeyStrength = AesKeyStrength.KEY_STRENGTH_128
             }
         }
 
