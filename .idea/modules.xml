@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Dates.iml" filepath="$PROJECT_DIR$/Dates.iml" group="Dates" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Dates/app" />
-      <module fileurl="file://$PROJECT_DIR$/calculatecurp/calculatecurp.iml" filepath="$PROJECT_DIR$/calculatecurp/calculatecurp.iml" group="Dates/calculatecurp" />
-      <module fileurl="file://$PROJECT_DIR$/calculatedates/calculatedates.iml" filepath="$PROJECT_DIR$/calculatedates/calculatedates.iml" group="Dates/calculatedates" />
-      <module fileurl="file://$PROJECT_DIR$/circleimageview/circleimageview.iml" filepath="$PROJECT_DIR$/circleimageview/circleimageview.iml" group="Dates/circleimageview" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zippy/zippy.iml" filepath="$PROJECT_DIR$/.idea/modules/zippy/zippy.iml" group="Dates/zippy" />
+      <module fileurl="file://$PROJECT_DIR$/Dates.iml" filepath="$PROJECT_DIR$/Dates.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Dates.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Dates.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/calculatecurp/Dates.calculatecurp.iml" filepath="$PROJECT_DIR$/.idea/modules/calculatecurp/Dates.calculatecurp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/calculatedates/Dates.calculatedates.iml" filepath="$PROJECT_DIR$/.idea/modules/calculatedates/Dates.calculatedates.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/circleimageview/Dates.circleimageview.iml" filepath="$PROJECT_DIR$/.idea/modules/circleimageview/Dates.circleimageview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/zippy/Dates.zippy.iml" filepath="$PROJECT_DIR$/.idea/modules/zippy/Dates.zippy.iml" />
     </modules>
   </component>
 </project>

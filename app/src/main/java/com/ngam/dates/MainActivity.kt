@@ -3,6 +3,7 @@ package com.ngam.dates
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.ngam.calculatedates.Logic.CompareDates
+import com.ngam.calculatedates.Logic.ConvertDate
 import com.ngam.calculatedates.Logic.ConvertDate.Companion.addDaysToDate
 import com.ngam.calculatedates.Logic.ConvertDate.Companion.convertDate
 import com.ngam.calculatedates.data.Result
@@ -25,6 +26,10 @@ class MainActivity : AppCompatActivity() {
         boton.setOnClickListener {
             writeFile("sdsd")
         }
+        val datemax = CompareDates.plusDate("01/01/1973", 12)
+        val mindate = CompareDates.minusDate("01/01/1973", 130)
+        val result = CompareDates.rangeDate("01/01/1973", mindate, datemax)
+        println("RESULT $datemax | $mindate || $result")
     }
 
 
