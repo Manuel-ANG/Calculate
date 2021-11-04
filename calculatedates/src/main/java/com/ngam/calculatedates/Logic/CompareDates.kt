@@ -40,6 +40,23 @@ class CompareDates {
             }
         }
 
+        fun dateInRange(date: String, minDate: Date, maxDate: Date): Result {
+            val value = ConvertDate.toDate(date, "dd/MM/yyyy")
+            return if (value != null) {
+                if (value > maxDate) {
+                    Result.MAYOR
+                } else if (value < minDate) {
+                    Result.MENOR
+                } else if (value in minDate..maxDate) {
+                    Result.IN_RANGE
+                }else{
+                    Result.ERROR
+                }
+            } else {
+                Result.ERROR
+            }
+        }
+
         fun minusDate(date: String, years: Int? = null, months: Int? = null, days: Int? = null): Date {
             val value = ConvertDate.toDate(date, "dd/MM/yyyy")
             val time = MutableDateTime(value)
