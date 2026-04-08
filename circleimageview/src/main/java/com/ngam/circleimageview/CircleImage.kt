@@ -8,11 +8,10 @@ import android.util.AttributeSet
 import android.widget.LinearLayout
 import androidx.annotation.ColorInt
 import androidx.annotation.Dimension
-import kotlinx.android.synthetic.main.imageview.view.*
 import java.io.File
 
 class CircleImage(context: Context, attributeSet: AttributeSet) : LinearLayout(context, attributeSet) {
-
+/*
     private var loadImages: LoadImages = LoadImages(context)
     private var dimension: Int? = null
 
@@ -72,4 +71,5 @@ class CircleImage(context: Context, attributeSet: AttributeSet) : LinearLayout(c
         super.draw(canvas)
         dimension = this.height
     }
+    */
 }

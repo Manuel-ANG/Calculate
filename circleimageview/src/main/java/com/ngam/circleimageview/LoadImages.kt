@@ -10,7 +10,6 @@ import java.io.File
 class LoadImages(val context: Context) {
 
     fun loadDrawable(imageView: ImageView, drawable: Drawable?, centercrop: Boolean) {
-        println("CENTER CROP $centercrop")
         if (centercrop) {
             Glide.with(context)
                 .asDrawable()
