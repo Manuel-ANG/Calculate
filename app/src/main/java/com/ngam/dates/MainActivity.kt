@@ -2,17 +2,13 @@ package com.ngam.dates
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.ngam.calculatedates.Logic.CalculateDate
 import com.ngam.calculatedates.Logic.CompareDates
-import com.ngam.calculatedates.Logic.ConvertDate
 import com.ngam.calculatedates.Logic.ConvertDate.Companion.addDaysToDate
 import com.ngam.calculatedates.Logic.ConvertDate.Companion.convertDate
-import com.ngam.calculatedates.data.Result
 import com.ngam.zippy.CreateFile
 import com.ngam.zippy.Zipper
-import kotlinx.android.synthetic.main.activity_main.*
 import java.io.File
-import java.io.FileWriter
-import java.util.*
 import kotlin.collections.ArrayList
 
 class MainActivity : AppCompatActivity() {
@@ -23,12 +19,13 @@ class MainActivity : AppCompatActivity() {
         println("APPLYS ${convertDate(null, "MM/dd/yyyy HH:mm:ss")}")
         val fecha = "20/01/2020"
         println("APPLYS ${addDaysToDate(fecha, "dd/MM/yyyy", -20)}")
-        boton.setOnClickListener {
-            writeFile("sdsd")
-        }
+
+       // boton.setOnClickListener {writeFile("sdsd")}
+
         val datemax = CompareDates.plusDate("01/01/1973", 12)
         val mindate = CompareDates.minusDate("01/01/1973", 130)
         val result = CompareDates.rangeDate("01/01/1973", mindate, datemax)
+        val dates = CalculateDate(this)
         println("RESULT $datemax | $mindate || $result")
     }
 
